@@ -2,8 +2,8 @@
 #include "Bank_Database.h"
 
 #define SIZE 5
-customer_t customer[SIZE];
-int counter;
+customer_t customer[SIZE]={0};
+int counter=0;
 
 int main()
 {
