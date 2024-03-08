@@ -8,6 +8,10 @@ extern int counter;
 
 void create_customer(void)
 {
+    if(customer[SIZE-1].id != 0)
+    {
+        printf("the maximum number of customers is %i so you can't add any more\n",SIZE);
+    }
     for (counter=0;counter<SIZE;counter++ )
     {
         if(customer[counter].id == 0 )
@@ -26,10 +30,7 @@ void create_customer(void)
         }
 
     }
-    if(customer[SIZE-1].id != 0)
-        {
-            printf("the maximum number of customers is %i so you can't add any more\n",SIZE);
-        }
+
 
 }
 
@@ -78,6 +79,7 @@ void delete_customer(int id)
         customer[i].id = customer[i+1].id;
         i++;
     }
+    customer[SIZE].id = 0;
 }
 
 void print_customer_data(int id)
