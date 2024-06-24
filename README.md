@@ -1,5 +1,5 @@
 # Bank-Database
-An employer in bank enters a data (name, cash, id and type[credit or debit]) of a new customer, edits old data, deletes old data, send money from customer to another customer and prints current data using array.
+In this project an employer in bank enters a data (name, cash, id and type[credit or debit]) of a new customer, edits old data, deletes old data, send money from customer to another customer and prints current data using array.
 
 if data of customer number 3 is deleted and there are 5 customer in array the program will shift customer number 4 to the place of customer number 3 and will shift the customer number 5 to place of customer number 4 and so on.
 
